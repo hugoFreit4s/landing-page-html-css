@@ -1,0 +1,127 @@
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+#logo-header{
+    width: 150px;
+}
+
+.body{
+    display: flex;
+    margin-left: 40%;
+    margin-top: 50px;
+    background-color: rgb(197, 124, 124);
+    width: 300px;
+    height: 500px;
+    border-radius: 10%;
+}
+.email-field{
+    float: left;
+    height: 45px;
+    margin-top: 90px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    position: relative;
+    font-size: 20px;
+}
+.email-field input{
+    max-width: 90%;
+    border: 2px solid gray;
+    width: 260px;
+    height: 40px;
+    box-shadow: 0px 0px 30px rgb(0, 0, 0) ;
+    background-color: white;
+    outline: none;
+    font-size: 20px;
+    transition: all .5s ease-out;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    border-radius: 10px;
+}
+.email-field input:focus{
+    border: 2px solid black;
+}
+.email-field input::placeholder{
+    color: transparent;
+}
+.email-field label{
+    opacity: 20%;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 8px;
+    margin-left: 10px;
+    transition: all .5s ease-out;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+}
+.email-field input:required:invalid + label{
+    color: black;
+}
+.email-field input:focus:required:invalid{
+    border: 2px solid black;
+}
+.email-field input:focus + label,
+.email-field input:not(:placeholder-shown) + label{
+    opacity: 100%;
+    font-size: 11px;
+    margin-left: 5px;
+    margin-top: 3px;
+    color: black;
+}
+.password-field{
+    float: left;
+    max-width: 90%;
+    height: 45px;
+    margin-top: 180px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    position: relative;
+    font-size: 20px;
+}
+.password-field input{
+    width: 260px;
+    height: 40px;
+    box-shadow: 0px 0px 30px rgb(0, 0, 0) ;
+    background-color: white;
+    border: 2px solid gray;
+    outline: none;
+    font-size: 20px;
+    transition: all .5s ease-out;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    border-radius: 10px;
+}
+.password-field input:focus{
+    border: 2px solid black;
+}
+.password-field input::placeholder{
+    color: transparent;
+}
+.password-field label{
+    opacity: 20%;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 8px;
+    margin-left: 10px;
+    transition: all .5s ease-out;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+}
+.password-field input:required:invalid + label{
+    color: black;
+}
+.password-field input:focus:required:invalid{
+    border: 2px solid black;
+}
+.password-field input:focus + label,
+.password-field input:not(:placeholder-shown) + label{
+    opacity: 100%;
+    font-size: 18px;
+    margin-left: 5px;
+    margin-top: 2px;
+    color: black;
+}
