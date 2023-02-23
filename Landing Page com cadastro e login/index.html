@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Josefin+Sans:wght@100&family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet">
     <style> @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Josefin+Sans:wght@100&family=PT+Sans+Narrow:wght@700&display=swap'); </style>
+    <script src="index.js"></script>
 </head>
 <body>
     <div class="container-header">
@@ -35,9 +36,10 @@
             <p id="singin-text">Já tem uma conta? Faça <a class="link" href="sign-in.html">LOGIN</a></p>
         </div>
         <div class="email-field">
-            <input type="email" autocomplete="on" placeholder=" " required/>
+            <input type="email" name="email" onblur="validacaoEmail(f1.email)" maxlength="60" size="65" autocomplete="on" placeholder=" " required/>
             <label for="email" class="email-field">E-MAIL</label>
         </div>
+        <div id="msgemail"></div>
         <div class="password-field">
             <input type="password" autocomplete="off" placeholder=" " required/>
             <label for="password" class="password-field">SENHA</label>
